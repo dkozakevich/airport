@@ -1,6 +1,4 @@
-/**
- * Created by Dmitry on 14.03.2017.
- */
+
 public class CheckIn {
     private double baggageWeightLimit = 20;
 
