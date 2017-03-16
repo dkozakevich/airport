@@ -10,11 +10,6 @@ public class Passenger {
         this.baggageWeight = baggageWeight;
     }
 
-    public Passenger(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-
-    }
 
     public double getBaggageWeight() {
         return baggageWeight;

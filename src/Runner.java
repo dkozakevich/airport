@@ -11,6 +11,11 @@ public class Runner {
         if (checkIn.isBaggageOverweight(passenger) == false)
         System.out.println("Baggage is not overweight!!!");
 
+        CashWindow cashWindow = new CashWindow();
+
+        Ticket ticket = cashWindow.buyTicket(passenger, FlightClass.FIRST);
+        ticket.showTicketInfo();
+
 
     }
 }
