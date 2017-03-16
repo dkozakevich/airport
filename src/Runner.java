@@ -4,6 +4,7 @@ public class Runner {
         String firstName = "Dmitry";
         String lastName = "Kozakevich";
         double baggageWeight = 20;
+        String flightDestination = "New York";
 
         Passenger passenger = new Passenger(firstName, lastName, baggageWeight);
         CheckIn checkIn = new CheckIn();
@@ -13,7 +14,7 @@ public class Runner {
 
         CashWindow cashWindow = new CashWindow();
 
-        Ticket ticket = cashWindow.buyTicket(passenger, FlightClass.FIRST);
+        Ticket ticket = cashWindow.buyTicket(passenger, FlightClass.FIRST, flightDestination);
         ticket.showTicketInfo();
 
 

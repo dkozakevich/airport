@@ -4,6 +4,7 @@ public class Passenger {
     private String lastName;
     private double baggageWeight;
 
+
     public Passenger(String firstName, String lastName, double baggageWeight){
         this.firstName = firstName;
         this.lastName = lastName;
