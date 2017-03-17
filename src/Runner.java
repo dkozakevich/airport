@@ -18,6 +18,7 @@ public class Runner {
 
         checkIn.checkInThePassenger(ticket, passenger);
 
+        System.out.println("Check changed email");
 
     }
 }
