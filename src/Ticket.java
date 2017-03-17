@@ -12,16 +12,27 @@ public class Ticket {
 
     public Ticket(Passenger passenger, String flightClass, TicketStatus ticketStatus, String flightDestination){
         this.flightClass = flightClass;
-        this.status = ticketStatus.name();
+//        this.status = ticketStatus.name();
+        setTicketStatus(ticketStatus);
+
         this.passengeFirstName = passenger.getFirstName();
         this.passengeLastName = passenger.getLastName();
         this.flightDestination = flightDestination;
     }
 
+    public void setTicketStatus(TicketStatus ticketStatus){
+        this.status = ticketStatus.name();
+    }
+
+    public String getTicketStatus(){
+        return this.status;
+    }
+
     public void showTicketInfo(){
-        System.out.println("Flight class: " + flightClass + "\n" + "Ticket status: "
+        System.out.println("######## TICKET INFO ######## \n" + "Flight class: " + flightClass + "\n" + "Ticket status: "
                 + status + "\n" + "Passenger name: " + passengeFirstName + " " + passengeLastName + "\n"
-                + "Destination: " + flightDestination + "\n" + "Flight Number: " + getFlightNumber(flightDestination));
+                + "Destination: " + flightDestination + "\n" + "Flight Number: " + getFlightNumber(flightDestination)
+                + "\n#############################");
     }
 
     private String getFlightNumber(String flightDestination){
