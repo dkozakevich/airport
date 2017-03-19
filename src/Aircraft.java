@@ -4,8 +4,10 @@ public class Aircraft {
     private int currentNumberOfPassengers;
     private String flightNumber;
 
-    public Aircraft(int maxPassengersCapacity){
+    public Aircraft(int maxPassengersCapacity, int currentNumberOfPassengers, String flightNumber){
         this.maxPassengersCapacity = maxPassengersCapacity;
+        this.currentNumberOfPassengers = currentNumberOfPassengers;
+        this.flightNumber = flightNumber;
     }
 
     public boolean isAircraftFull(){

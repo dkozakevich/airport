@@ -7,10 +7,13 @@ public class Runner {
         String flightDestination = "New York";
 
         Passenger passenger = new Passenger(firstName, lastName, baggageWeight);
-        Aircraft aircraftAirbus = new Aircraft(20);
+        Aircraft aircraftAirbus = new Aircraft(20, 19, "N1100");
 
         CashWindow cashWindow = new CashWindow();
-        Ticket ticket = cashWindow.buyTicket(passenger, FlightClass.FIRST, flightDestination);
+
+
+        Ticket ticket = cashWindow.buyTicket(passenger, FlightClass.FIRST, flightDestination, aircraftAirbus);
+
         ticket.showTicketInfo();
 
 
